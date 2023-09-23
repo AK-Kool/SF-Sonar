@@ -1,0 +1,20 @@
+<template>
+    <h1>Login Page</h1>
+    <div>
+        <label for="username">Username:</label>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            value={username}
+            oninput={handleUsernameChange}
+        />    
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value={password} oninput={handlePasswordChange} />
+    </div>
+    <div>
+        <lightning-button label="Login" onclick={handleLogin}></lightning-button>
+    </div>
+</template>
