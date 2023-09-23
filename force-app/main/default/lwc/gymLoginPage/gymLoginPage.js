@@ -12,6 +12,7 @@ export default class GymLoginPage extends LightningElement
         this.password = event.target.value;
     }
     handleLogin() {
+        alert('Clicked');
         // Implement your authentication logic here.
         // Check if the username and password are valid.
         if (this.username === 'your_username' && this.password === 'your_password') {
